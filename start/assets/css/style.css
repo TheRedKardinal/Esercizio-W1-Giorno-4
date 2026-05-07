@@ -69,19 +69,18 @@ h3 {
     color: rgb(238, 199, 4);
     font-weight: bold;
     line-height: 3;
-    display: inline-block;
     padding: 8px 16px;
     margin: 0 4px;
     border-radius: 4px;
 }
 
 #site-header nav ul {
-list-style: none;
-display: inline-block;
+    list-style: none;
+    padding: 0;
 }
 
 #site-header nav li {
-    float: left;
+    display: inline-block;
 }
 
 nav a:hover {
@@ -150,21 +149,20 @@ nav a:hover {
     box-shadow: 0 2px 6px rgb(164, 3, 3);
 }
 
-.project h3 {
-margin-left: 5px;
-margin-right: 5px;
+.project h3, p, a {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .project:first-of-type h3::after {
     content: "NEW";
     display: inline-block;
-    padding: 2px 8px;
+    padding: 6px 8px;
     margin-left: 12px;
     background-color: rgb(238, 135, 18);
     color: #ffffff;
     border-radius: 3px;
-    font-size: 0.75rem;
-    
+    font-size: 1rem;
 }
 
 input::placeholder,
@@ -221,11 +219,6 @@ caption,
 th,
 td {
     border: 2px solid black;
-}
-
-figcaption {
-    font-style: italic;
-    color: gray;
 }
 
 #site-footer {
